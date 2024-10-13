@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form to apply for WebDev course</h1>
+    <label for="username">Enter Your Username</label>
+    <form action="post">
+        <div>
+            <input type="text" id="username" name="username" placeholder="example - raunak1719" autofocus>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscrbibe">Subscribe to Newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter your comment</label>
+            <br>
+            <textarea name="comment" rows="4" cols="50" id="comment"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="guava">Guava</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
