@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element Selector */
+        div{
+            background-color: pink;
+            color: purple;
+        }
+        /* Class Selector */
+        .red{
+            background-color: yellow;
+            color: red;
+        }
+        /* ID SDelector */
+        #thirdDiv{
+            background-color: black;
+            color: white;
+        }
+        /* Child Selectors */
+        div > p{
+            background-color: green;
+            color: white;
+        }
+        /* Descendent Selector */
+        div h1{
+            background-color: blue;
+            color: white;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: rgb(49, 49, 3);
+        }
+        a:link{
+            color: violet
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: indigo;
+        }
+        p:first-child{
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </div>
+    <div class="red">
+        I am a div
+    </div>
+    <div>
+        I am another div
+    </div>
+    <div id="thirdDiv">
+        This is the third div
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div>
+        <article>
+            <h1>How are you?</h1>
+        </article>
+    </div>
+    <a target="_blank" href="https://www.google.com">Go to Google</a>
+    <a target="_blank" href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>
