@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 1366px; */
+            width: 80vw;
+            /*Viewport width*/
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1366px; */
+            width: 80vw;
+            /*Viewport width*/
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            /* font-size: 16px; */
+            box-sizing: border-box;
+        }
+
+        .container p {
+            /* font-size: 1.8em; */
+            font-size: 2rem;
+
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .mycount{
+            background-color: red;
+            color: white;
+            font-size: 22px;
+            width: 100vmin;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi quibusdam nulla laboriosam, tenetur maiores
+            dolor
+            illum fugiat laudantium nesciunt, ad voluptatibus quaerat porro vel in repellendus, voluptatum repellat
+            repudiandae vitae ea. Quos sed cupiditate accusamus recusandae harum facere? Ullam quaerat debitis maxime
+            enim!
+            Accusantium fugiat, ipsum rerum maiores doloremque, delectus quae consectetur pariatur in corrupti dolores.
+        </p>
+    </div>
+    <div class="mycount">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo similique et aliquam.
+    </div>
+</body>
+
+</html>
