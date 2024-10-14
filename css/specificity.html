@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        .cred {
+            color: red;
+        }
+
+        /* the property added at the last is applied  */
+
+/* 
+        Universal Selector: 0 
+        Element selectors and pseudo-elements: 1 
+        Class selectors, attribute selectors,and pseudo-classes: 10 
+        ID selectors: 100 
+        Inline styles: 1000 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>
