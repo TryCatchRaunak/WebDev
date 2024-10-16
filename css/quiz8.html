@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 8</title>
+    <style>
+        .container {
+            width: 95vw;
+            height: 80vh;
+            background-color: blueviolet;
+            position: relative;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 4rem;
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            border-radius: 70px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            animation: horizontalMovement 5s linear infinite, verticalMovement 1s ease-out alternate infinite, rotation 1s linear infinite;
+        }
+
+        @keyframes horizontalMovement {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 80%;
+            }
+        }
+
+        @keyframes verticalMovement {
+            from {
+                bottom: 0;
+            }
+
+            to {
+                bottom: 80%;
+            }
+        }
+
+        @keyframes rotation{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Create a box in a container and bounce it from one end to another of the container like a ball using css animation. -->
+    <div class="container">
+        <div class="box">
+            B
+        </div>
+    </div>
+</body>
+
+</html>
