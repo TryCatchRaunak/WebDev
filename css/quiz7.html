@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navBar {
+            margin: 20px 40px 40px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 220px;
+            margin-left: 15px;
+            margin-top: 2px;
+        }
+
+        .labels ul {
+            display: flex;
+        }
+
+        .labels ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .btn {
+            background-color: white;
+            border: none;
+            padding: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: rgba(6, 7, 34, 0.815);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
+
+        }
+
+        .heading h1 {
+            font-size: 60px;
+        }
+
+        .heading h1 strong {
+            color: rgb(4, 8, 53);
+            font-weight: 900;
+        }
+        .heading p{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 22px;
+        }
+        .primary{
+            margin-top: 40px;
+            border-radius: 10px;
+            padding: 20px;
+            border: none;
+            background-color: #08A7BD;
+            font-size: 16px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Design a website's nabar using flexbox -->
+    <div class="navBar">
+        <div class="logo">
+            <img src="UE-Logo-1.webp" alt="">
+        </div>
+        <div class="labels">
+            <ul>
+                <li><button class="btn">Products</button></li>
+                <li><button class="btn">For business</button></li>
+                <li><button class="btn">Resources</button></li>
+                <li><button class="btn">Support</button></li>
+                <li><button class="btn">Our Company</button></li>
+                <li><button class="btn">Language</button></li>
+                <li><button class="btn">Search</button></li>
+            </ul>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>Download <strong>UltraEdit</strong> for Windows</h1>
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of the text
+            editor.</p>
+        <button class="primary">DOWNLOAD MAC OR LINUX VERSION</button>
+    </div>
+</body>
+
+</html>
