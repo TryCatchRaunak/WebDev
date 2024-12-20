@@ -14,8 +14,10 @@
   "author": "Raunak",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "expressjs": "^1.0.1",
+    "jsonwebtoken": "^9.0.2",
     "slugify": "^1.6.6"
   }
 }
