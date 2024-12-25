@@ -5,22 +5,38 @@ const port = 3000
 
 app.use(express.static('public'))
 
+// app.get('/', (req, res) => {
+//     console.log("Hey it is a get request")
+//     res.send('Hello World!')
+// })
+
+// app.post('/', (req, res) => {
+//     console.log("Hey it is a post request")
+//     res.send('Hello World Post!')
+// })
+
+// app.put('/', (req, res) => {
+//     console.log("Hey it is a put request")
+//     res.send('Hello World Put!')
+// })
+
+// app.delete('/', (req, res) => {
+//     console.log("Hey it is a delete request")
+//     res.send('Hello World Delete!')
+// })
+
+
+//Chaining
 app.get('/', (req, res) => {
     console.log("Hey it is a get request")
     res.send('Hello World!')
-})
-
-app.post('/', (req, res) => {
+}).post('/', (req, res) => {
     console.log("Hey it is a post request")
     res.send('Hello World Post!')
-})
-
-app.put('/', (req, res) => {
+}).put('/', (req, res) => {
     console.log("Hey it is a put request")
     res.send('Hello World Put!')
-})
-
-app.delete('/', (req, res) => {
+}).delete('/', (req, res) => {
     console.log("Hey it is a delete request")
     res.send('Hello World Delete!')
 })
