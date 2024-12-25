@@ -1,4 +1,5 @@
 import express from "express"
+import path from "path"
 
 const app = express()
 const port = 3000
@@ -41,6 +42,17 @@ app.get('/', (req, res) => {
     res.send('Hello World Delete!')
 })
 
+
+app.get('/index', (req,res) => {
+    console.log("Hey it's index")
+    // res.send('Hello Index')
+    //res.sendFile('templates/index.html', {root: __dirname})//This is followed when we use '__dirname' and change type to 'module' in package.json
+    res.sendFile(path.resolve('templates/index.html'))//This is followed when we use 'path' package
+})
+
+app.get('/api', (req, res) => {
+    res.json({"a": 1, "b": 2, "c": 3, "d": 4})
+})
 app.listen(port, () =>{
     console.log(`Server listening at http://localhost:${port}`)
 })
