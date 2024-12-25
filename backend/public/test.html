@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing POST request in Express App</title>
+</head>
+<body>
+    <h1>ExpressJS post request</h1>
+    <!-- <script>
+        async function testPost() {
+            try {
+                let response = await fetch('/', { method: "POST" });
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+    
+                let responseBody = await response.text();
+                console.log(responseBody);
+            } catch (error) {
+                console.error("Error occurred:", error);
+            }
+        }
+    
+        testPost();
+    </script> -->
+    
+    <script>
+        async function testPost(){
+            let a = await fetch('/', {method: "POST"})
+            let b = await a.text()
+            console.log(b)
+        }
+
+        testPost()
+    </script>
+    <!-- No need for try catch block -->
+</body>
+</html>
